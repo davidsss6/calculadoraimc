@@ -1,8 +1,9 @@
-import 'package:calculadoraimc/pages/imc_page.dart';
+import 'package:calculadoraimc/pages/cadastro_page.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primarySwatch: Colors.teal),
-      home: const ImcPagState(),
+      home: const CadastroPage(),
+      //home: const ImcPagState(),
     );
   }
 }

@@ -1,15 +1,16 @@
-import 'package:calculadoraimc/model/dados_usuario.dart';
+import 'package:calculadoraimc/model/dados_consulta_imc.dart';
+
 
 class ProgressoUsuario {
 
-  final List<DadosUsuario> _dados = [];
+  final List<ConsultaImc> _dados = [];
 
 
-  void adicionar(DadosUsuario dados) {
+  void adicionar(ConsultaImc dados) {
     _dados.add(dados);
   }
 
-  List<DadosUsuario> listar() {
+  List<ConsultaImc> listar() {
     return _dados;
   }
 

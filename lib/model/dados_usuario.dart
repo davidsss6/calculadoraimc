@@ -1,25 +1,24 @@
 
 class DadosUsuario {
 
-String altura;
-String peso;
-String data;
-double imc;
+String _nome;
+String _altura;
 
-DadosUsuario(this.altura, this.peso, this.data, this.imc);
 
-static double calculaImcUsuario(String alturaStr, String pesoStr){
-  double alturaDb = double.parse(alturaStr);
-  double pestoDb = double.parse(pesoStr);
+DadosUsuario(this._nome, this._altura);
 
-   if (alturaDb <= 0) {
-      throw ArgumentError('A altura deve ser maior que zero.');
-    }
-    if (pestoDb <= 0) {
-      throw ArgumentError('O peso deve ser maior que zero.');
-    }
-    return pestoDb / (alturaDb * alturaDb);
-  }
+String get nome => _nome;
+
+set nome (String nome) {
+		    _nome = nome;	
+		}
+
+
+String get altura => _altura;
+
+set altura (String altura) {
+		    _altura = altura;	
+		}   
 
 
 }
