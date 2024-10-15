@@ -207,7 +207,6 @@ class _CadastroPageState extends State<CadastroPage> {
 }
 
 
-```dart
 class ImcPagState extends StatefulWidget {
   const ImcPagState({super.key});
 
